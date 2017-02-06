@@ -1,149 +1,336 @@
-<!DOCTYPE>
-<html>
-<head>
-<title>WeHack '17</title>
+<html id="pc" lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/styles.css">
+      <title>Wehack 2017</title>
+   </head>
+   <body>
+     <div class="logo-img default"></div>
+     <div class="logo-img moveable"></div>
+      <nav class="main-nav">
+         <h1 class="logo">
+            <div class="byline"><span class="title">Technology hackfest</span> <span class="date">2017 | VIT University</span></div>
 
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
 
-<!-- Bootstrap Core CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Custom CSS -->
-<link href="css/scrolling-nav.css" rel="stylesheet">
-
-</head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">#WeHack</a>
+         </h1>
+         <ul class="nav-tiles cf" id="js-nav">
+            <li class="tile-outer active">
+               <a href="#about" class="tile-inner">
+                  <div class="fa fa-info icon"></div>
+                  <div class="tile-content">
+                     <div class="h2">About</div>
+                     <div class="subtext">What is Wehack?</div>
+                  </div>
+               </a>
+            </li>
+            <li class="tile-outer">
+               <a href="#event" class="tile-inner">
+                  <div class="fa fa-info icon"></div>
+                  <div class="tile-content">
+                     <div class="h2">Event</div>
+                     <div class="subtext">How it'll happen</div>
+                  </div>
+               </a>
+            </li>
+            <li class="tile-outer">
+               <a href="#past" class="tile-inner">
+                  <div class="fa fa-info icon"></div>
+                  <div class="tile-content">
+                     <div class="h2">Past</div>
+                     <div class="subtext">How we did it</div>
+                  </div>
+               </a>
+            </li>
+            <li class="tile-outer">
+               <a href="#challenges" class="tile-inner">
+                  <div class="fa fa-info icon"></div>
+                  <div class="tile-content">
+                     <div class="h2">Challenges</div>
+                     <div class="subtext">Pressing problems</div>
+                  </div>
+               </a>
+            </li>
+            <li class="tile-outer">
+               <a href="#" class="tile-inner">
+                  <div class="fa fa-info icon"></div>
+                  <div class="tile-content">
+                     <div class="h2">Supporters</div>
+                     <div class="subtext">Our strength</div>
+                  </div>
+               </a>
+            </li>
+            <li class="tile-outer">
+               <a href="#" class="tile-inner">
+                  <div class="fa fa-info icon"></div>
+                  <div class="tile-content">
+                     <div class="h2">Register</div>
+                     <div class="subtext">Limited seats</div>
+                  </div>
+               </a>
+            </li>
+         </ul>
+      </nav>
+      <main>
+         <section class="top-header">
+            <h2>
+               <div class="top-text">The Hackathon you've been waiting for</div>
+               <div class="main-text">Hacking together,<br>For a better future.</div>
+            </h2>
+         </section>
+         <section class="register-promo">
+            <div class="register-box">
+               <h2 data-content="Registrations coming soon">Registrations starting shortly</h2>
+               <p>Patience, you must have young padawan. Follow on social media, you must.</p>
+               <div class="social-bar"><a href="https://www.facebook.com/clabsvit" title="Creation Labs on Facebook"><span class="fa fa-facebook-square"></span></a> <a href="https://www.twitter.com/Creation_labs" title="Creation Labs on Twitter"><span class="fa fa-twitter"></span></a></div>
+               <!-- <a class="wh-btn register-btn">Register</a> -->
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#event">Event</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#past">Past</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#challenges">Challenges</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#supportes">Supporters</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#register">Register</a>
-                    </li>
-                </ul>
+         </section>
+         <section class="what-wehack cf" id="about">
+            <h2 class="heading-normal">What is Wehack?</h2>
+            <div class="content cf">
+               <div class="intro">
+                  <p>Wehack is VIT University's annual hackathon event, bringing together most creative and passionate students from universities all over the world for 36 hours of hacking to create ground-breaking technologies from scratch in a weekend.</p>
+                  <p>Participants will be trading their sleep for a weekend and create diverse teams to compete to build, test and launch their solutions for pressing challenges, together in an environment optimized for creativity.</p>
+                  <div class="stats-box">
+                     <div class="stat">
+                        <img src="images/coffee.png" alt="Coffee">
+                        <div class="stat-content">
+                           <h3 class="stat-heading">Coffee</h3>
+                           <p>For 36 hours</p>
+                        </div>
+                     </div>
+                     <div class="stat">
+                        <img src="images/hackers.png" alt="Hackers">
+                        <div class="stat-content">
+                           <h3 class="stat-heading">500+ Hackers</h3>
+                           <p>Mentors too!</p>
+                        </div>
+                     </div>
+                     <div class="stat">
+                        <img src="images/internet.png" alt="Internet">
+                        <div class="stat-content">
+                           <h3 class="stat-heading">Internet</h3>
+                           <p>Good Wi-Fi</p>
+                        </div>
+                     </div>
+                     <div class="stat">
+                        <img src="images/infinity.png" alt="Infinite ideas">
+                        <div class="stat-content">
+                           <h3 class="stat-heading">Infinite ideas</h3>
+                           <p>Game changing ones</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="feature-box cf">
+                  <div class="feature">
+                     <div class="img" style="background-image: url('images/events/empowering.jpg')"></div>
+                     <h3>Empowering the next generation of talent.</h3>
+                     <p>Our next tryst with innovation for the upcoming #WeHack is all for the youth and young hackers to explore, learn and create. #WeHack gives students hands-on experiences. We get students excited about problem solving by showing them how fun, creative, and empowering hacking can be.</p>
+                  </div>
+                  <div class="feature">
+                     <div class="img" style="background-image: url('images/events/meet.jpg')"></div>
+                     <h3>Meet new friends and make relationships that last.</h3>
+                     <p>#WeHack is not just another Hackathon, bringing together and an exchange of ideas is what we aim at, and with this, #WeHack increases the outreach for the curious minds and the participants while working, get along over coffee or ideas and tend to share a bond.</p>
+                  </div>
+               </div>
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Intro Section -->
-    <section id="intro" class="intro-section">
-
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>About Section</h1>
-                </div>
+         </section>
+         <section class="wehack-event" id="event">
+            <h2 class="heading-normal">Wehack: The event</h2>
+            <div class="content">
+               <div class="side-image" style="background-image: url('images/events/event.jpg')"></div>
+               <div class="schedule cf">
+                  <h3>Schedule</h3>
+                  <p style="font-weight: bold">Coming soon</p>
+                  <!-- <div class="listing">
+                     <table>
+                     	<caption>Saturday</caption>
+                     	<tr>
+                     		<th>8 am</th>
+                     		<td>Registration</td>
+                     	</tr>
+                     	<tr>
+                     		<th>10-11 am</th>
+                     		<td>Idea pitching</td>
+                     	</tr>
+                     	<tr>
+                     		<th>8 am</th>
+                     		<td>Registration</td>
+                     	</tr>
+                     	<tr>
+                     	<tr>
+                     		<th>10-11 am</th>
+                     		<td>Idea pitching</td>
+                     	</tr>
+                     	<tr>
+                     		<th>8 am</th>
+                     		<td>Registration</td>
+                     	</tr>
+                     	<tr>
+                     		<th>10-11 am</th>
+                     		<td>Lorem ipsum dolor sit amet, consectetur.</td>
+                     	</tr>
+                     </table>
+                     </div>
+                     <div class="listing">
+                     <table>
+                     	<caption>Saturday</caption>
+                     	<tr>
+                     		<th>8 am</th>
+                     		<td>Registration</td>
+                     	</tr>
+                     	<tr>
+                     		<th>10-11 am</th>
+                     		<td>Idea pitching</td>
+                     	</tr>
+                     	<tr>
+                     		<th>8 am</th>
+                     		<td>Registration</td>
+                     	</tr>
+                     	<tr>
+                     	<tr>
+                     		<th>10-11 am</th>
+                     		<td>Idea pitching</td>
+                     	</tr>
+                     	<tr>
+                     		<th>8 am</th>
+                     		<td>Registration</td>
+                     	</tr>
+                     	<tr>
+                     		<th>10-11 am</th>
+                     		<td>Lorem ipsum dolor sit amet, consectetur.</td>
+                     	</tr>
+                     </table>
+                     </div> -->
+               </div>
+               <div class="goto cf">
+                  <h3>Here's your go-to list</h3>
+                  <div class="intro">
+                     <p>Wehack is for undergraduates &amp; MBA students from any college in the world! Unfortunately, high school and graduate students can't attend.</p>
+                     <p>If you don't have a team now, don't stress! We'll have team formation and pitch session geared towards helping you find people to work with.</p>
+                  </div>
+                  <div class="feature">
+                     <h4>Food &amp; Drink</h4>
+                     <p>We got all the <em>essential</em> hacker foods ready with us so you can eat to your fullest.</p>
+                     <p>And ofcourse, a lot of coffee to keep you up and hacking all night.</p>
+                  </div>
+                  <div class="feature">
+                     <h4>What to bring</h4>
+                     <p>Bring a valid student ID for admission and a laptop for hacking. We'll be providing pretty much everything else.</p>
+                  </div>
+               </div>
+               <div class="questions">
+                  <p>Have any other questions?<br>Contact us at <a href="mailto:hello@wehack2017.com">hello@wehack2017.com</a></p>
+               </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Event Section -->
-    <section id="event" class="services-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Event Section</h1>
-                </div>
+         </section>
+         <section class="past-hackathons cf" id="past">
+            <h2 class="heading-normal">Past Hackathons</h2>
+            <div class="content">
+               <h3>We love Hackathons</h3>
+               <p><b>#WeHack&nbsp;2014</b> was India’s first Wearable Technology Hackathon. Tackling challenges in the sectors of Consumer, Energy Conservation, Gaming and Healthcare, it garnered a crowd of over 150 participants and a myriad of innovative ideas in its maiden hackathon.</p>
+               <p>Our next tryst with innovation was <b>Makeathon&nbsp;2014</b>, which saw a participation of over 450 competitors, with Automation and Aerospace, Healthcare, Media Sciences and Accessibility, Energy Conservation as its challenging tracks.</p>
+               <p>This was followed by a Hackathon in 2014.This was our biggest hackathon by far and brought in excess of 1300 participants.</p>
+               <p><b>#WeHack&nbsp;2015</b> took all the amazing elements that made the first iteration amazing and greatly improved on it, where the ingenuity was set as a basic parameter for the participants.</p>
+               <p>Attracting a crowd of over 500 participants, it was a huge success in terms of the number of projects and their creativity. Projects covered a vast range of challenges, implementing IoT – Internet of Things – the theme of that hackathon.</p>
+               <div class="questions">
+                  <p>Have any other questions?<br>Contact us at <a href="mailto:hello@wehack2017.com">hello@wehack2017.com</a></p>
+               </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Past Section -->
-    <section id="past" class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Past Section</h1>
-                </div>
+            <div class="pixgrid">
+               <div class="img-container">
+                  <div class="img tall"><img src="http://placekitten.com/500/1000" alt=""></div>
+               </div>
+               <div class="img-container">
+                  <div class="img"><img src="http://placekitten.com/500/500" alt=""></div>
+                  <div class="img"><img src="http://placekitten.com/500/500" alt=""></div>
+               </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Challenges Section -->
-    <section id="challenges" class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Challenges Section</h1>
-                </div>
+            <h3>Wehack by the numbers</h3>
+            <div class="statgrid cf">
+               <div class="stat-item">
+                  <div class="stat-outer">
+                     <div class="stat-inner"><span>3</span></div>
+                  </div>
+                  <h4>Previous<br>hackathons</h4>
+               </div>
+               <div class="stat-item">
+                  <div class="stat-outer">
+                     <div class="stat-inner"><span>2500+</span></div>
+                  </div>
+                  <h4>Total<br>participants</h4>
+               </div>
+               <div class="stat-item">
+                  <div class="stat-outer">
+                     <div class="stat-inner"><span>100+</span></div>
+                  </div>
+                  <h4>Hand-coded<br>prototypes</h4>
+               </div>
+               <div class="stat-item">
+                  <div class="stat-outer">
+                     <div class="stat-inner"><span>50+</span></div>
+                  </div>
+                  <h4>Collaborations</h4>
+               </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Supporters Section -->
-    <section id="supporters" class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Supporters Section</h1>
-                </div>
+         </section>
+         <section class="challenges" id="challenges">
+            <h2 class="heading-normal">Challenges</h2>
+            <div class="callout-container">
+               <div class="callout left cf">
+                  <div class="img"><img src="http://placekitten.com/700/600" alt=""></div>
+                  <div class="callout-content">
+                     <h3>Hacking together,<br><span>For a better future.</span></h3>
+                     <p>Our reality has no lack of genuine issues to tackle that influence on our regular daily existences and those of future eras. These expansive scale issues traverse crosswise over urban areas, businesses, time zones, and societies.</p>
+                  </div>
+               </div>
+               <div class="callout right cf">
+                  <div class="img"><img src="http://placekitten.com/700/600" alt=""></div>
+                  <div class="callout-content">
+                     <h3>Hacking together,<br><span>To provide solutions.</span></h3>
+                     <p>We believe in coming out with projects that can provide realtime solutions to the problems the society faces. Prototypes are made with the purpose to make lives simpler.</p>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Register Section -->
-    <section id="register" class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Register Section</h1>
-                </div>
+         </section>
+         <section class="faq" id="faq">
+            <h2 class="heading-normal">Frequently Asked Questions</h2>
+            <div class="content">
+               <dl class="cf">
+                  <div class="faq-question">
+                     <dt>Who is eligible for WeHack?</dt>
+                     <dd>Wehack is for undergraduates and MBA students from any college in the world. Unfortunately, high school and graduate students can’t attend.</dd>
+                  </div>
+                  <div class="faq-question">
+                     <dt>What about teams?</dt>
+                     <dd>If you don’t have a team now, don’t stress. We will have team formation and pitching session geared towards helping you find people to work with.</dd>
+                  </div>
+                  <div class="faq-question">
+                     <dt>Will there be food and accomodation?</dt>
+                     <dd>Yes, We will provide catered meals during the event along with free caffeine! We will also provide accomodation inside the campus for the participants.</dd>
+                  </div>
+                  <div class="faq-question">
+                     <dt>Will certificates be provided?</dt>
+                     <dd>Yes, recognized certificates will be provided to all the participants.</dd>
+                  </div>
+                  <div class="faq-question">
+                     <dt>What do I need to bring?</dt>
+                     <dd>Please bring a student ID so we can verify and register you on-site. You will also need to bring a laptop, whatever software you feel might be necessary for development. Teammates are free to share equipment with each other.</dd>
+                  </div>
+               </dl>
+               <div class="questions">
+                  <p>404: Question Not Found!</p>
+                  <p>Have any other questions?<br>Contact us at <a href="mailto:hello@wehack2017.com">hello@wehack2017.com</a></p>
+               </div>
             </div>
-        </div>
-    </section>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
-
-</body>
-
+         </section>
+      </main>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/slipScrolll.js"></script>
+      <script src="../bower_components/jQuery/dist/jquery.min.js" charset="utf-8"></script><script src="js/script.js" charset="utf-8"></script>
+   </body>
 </html>
